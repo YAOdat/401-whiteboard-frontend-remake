@@ -1,0 +1,107 @@
+.post-form-wrapper {
+    padding: 30px 40px;
+    background-color: #151520;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    border-radius: 12px;
+    max-width: 400px;
+
+}
+
+.post-form-wrapper textarea {
+    background: transparent;
+    border: 2px solid #25424e;
+    height: auto;
+    width: 100%;
+margin: 5px;
+
+}
+
+
+.post-form-wrapper input {
+background: transparent;
+border: 2px solid #25424e;
+height: 50px;
+width: 100%;
+margin: 5px;
+
+}
+
+
+#main-button {
+
+
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    background-color: #a7f2ff;
+    border: none;
+    color: #103a70;
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+}
+
+
+#main-button:active,
+#main-button:focus{  
+  background-color: #102770;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+#main-button:hover{  
+  background-color: #103d70;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 #25424e;
+}
+
+
+.post-box {
+    width:90vw;
+    max-width:400px;
+    height:275px;
+    background: transparent;
+    text-align:center;
+    color:#fff;
+    font-size:22px;
+    margin:auto;
+    box-shadow:0 3px 9px rgba(0,0,0,0.3);
+    border-radius:10px;
+    padding:20px;
+}
+
+.secondary-buttons {
+    border: none;
+    background-color: #CC4949;
+    width: 100px;
+    font-size:10px;
+    color: white;
+    border-radius: 6px;
+    padding: 9px;
+    margin: 2px;
+}
+
+.secondary-buttons:hover {
+    background-color: #ff2f2f;
+}
+
+
+.posted-by {
+    font-size: 10px;
+    color: #ffeba7;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.post-title {
+    font-size: 22px;
+    color: #ffeba7;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 10px;
+
+}
