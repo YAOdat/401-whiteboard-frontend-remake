@@ -4,7 +4,7 @@ import { useState, createContext } from 'react'
 import cookies from 'react-cookies';
 import { When } from 'react-if';
 import { ChakraProvider } from '@chakra-ui/react'
-import { Button, ButtonGroup, useColorMode } from '@chakra-ui/react'
+import { Button, useColorMode } from '@chakra-ui/react'
 
 export const OutButtonContext = createContext();
 
