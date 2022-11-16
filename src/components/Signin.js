@@ -4,6 +4,7 @@ import  PostForm from './Add-post-form'
 import SignUp from './Signup'
 import  { OutButtonContext } from '../App';
 import {authContext} from '../Context/AuthContext'
+import { useColorMode, useColorModeValue } from '@chakra-ui/react';
 
 export const userAuth = createContext();
 
@@ -13,6 +14,7 @@ const {handleSignIn, auth, setAuth, signOut} = useContext(authContext)
 
 const [wrongInputsMessage, setWrongInputsMessage] = useState(false)
 
+const color = useColorModeValue('white', 'gray.800')
 
 
     return (
@@ -22,7 +24,7 @@ const [wrongInputsMessage, setWrongInputsMessage] = useState(false)
          <header>Sign in to <span id='Pomment'> Pomment </span></header>
         <form onSubmit={handleSignIn} >
             <When condition={wrongInputsMessage}> 
-            <p id='wrong-inputs-warning'> ⚠️ The password or the E-mail is incorrect! </p>
+            <p id='wrong-inputs-warning' color={color}> ⚠️ The password or the E-mail is incorrect! </p>
             </When>
         <input type='email' name='email' placeholder='Example@email.com' className='login-box-inputs'/> 
         <input type='password' name='password' className='login-box-inputs' placeholder='Password'/>
